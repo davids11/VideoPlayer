@@ -206,10 +206,6 @@ extension VideoPlayer: UIViewRepresentable {
         }
     }
     
-    public static func dismantleUIView(_ uiView: VideoPlayerView, coordinator: VideoPlayer.Coordinator) {
-        uiView.pause(reason: .hidden)
-    }
-    
     public class Coordinator: NSObject {
         var videoPlayer: VideoPlayer
         var observingURL: URL?
